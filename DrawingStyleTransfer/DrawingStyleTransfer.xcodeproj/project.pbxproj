@@ -14,6 +14,9 @@
 		6574BBFC1F8A56E200E10D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6574BBFB1F8A56E200E10D33 /* Assets.xcassets */; };
 		6574BBFF1F8A56E200E10D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6574BBFD1F8A56E200E10D33 /* LaunchScreen.storyboard */; };
 		6574BC0A1F8A56E200E10D33 /* DrawingStyleTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574BC091F8A56E200E10D33 /* DrawingStyleTransferTests.swift */; };
+		6574BC161F8A58D300E10D33 /* StyleTransferAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574BC151F8A58D300E10D33 /* StyleTransferAPI.swift */; };
+		6574BC171F8A58D300E10D33 /* StyleTransferAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574BC151F8A58D300E10D33 /* StyleTransferAPI.swift */; };
+		B09AC0F8DD4BECEB8DE2E397 /* Pods_DrawingStyleTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEDD337763E35F83B7043EE /* Pods_DrawingStyleTransfer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DEDD337763E35F83B7043EE /* Pods_DrawingStyleTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawingStyleTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6574BBEE1F8A56E200E10D33 /* DrawingStyleTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingStyleTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6574BBF11F8A56E200E10D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6574BBF31F8A56E200E10D33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,9 @@
 		6574BC051F8A56E200E10D33 /* DrawingStyleTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingStyleTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6574BC091F8A56E200E10D33 /* DrawingStyleTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingStyleTransferTests.swift; sourceTree = "<group>"; };
 		6574BC0B1F8A56E200E10D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6574BC151F8A58D300E10D33 /* StyleTransferAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferAPI.swift; sourceTree = "<group>"; };
+		753E0ACF3E45790F163E12BD /* Pods-DrawingStyleTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingStyleTransfer.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingStyleTransfer/Pods-DrawingStyleTransfer.release.xcconfig"; sourceTree = "<group>"; };
+		7EA0B0FA456DA575610DA13E /* Pods-DrawingStyleTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingStyleTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingStyleTransfer/Pods-DrawingStyleTransfer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09AC0F8DD4BECEB8DE2E397 /* Pods_DrawingStyleTransfer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +66,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59A766A985722C53FD992031 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EA0B0FA456DA575610DA13E /* Pods-DrawingStyleTransfer.debug.xcconfig */,
+				753E0ACF3E45790F163E12BD /* Pods-DrawingStyleTransfer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5CE3627CED33393DB8FD6ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DEDD337763E35F83B7043EE /* Pods_DrawingStyleTransfer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6574BBE51F8A56E100E10D33 = {
 			isa = PBXGroup;
 			children = (
 				6574BBF01F8A56E200E10D33 /* DrawingStyleTransfer */,
 				6574BC081F8A56E200E10D33 /* DrawingStyleTransferTests */,
 				6574BBEF1F8A56E200E10D33 /* Products */,
+				59A766A985722C53FD992031 /* Pods */,
+				5CE3627CED33393DB8FD6ED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +106,7 @@
 		6574BBF01F8A56E200E10D33 /* DrawingStyleTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				6574BC141F8A58B800E10D33 /* Backend */,
 				6574BBF11F8A56E200E10D33 /* AppDelegate.swift */,
 				6574BBF31F8A56E200E10D33 /* ViewController.swift */,
 				6574BBF51F8A56E200E10D33 /* Main.storyboard */,
@@ -99,6 +127,14 @@
 			path = DrawingStyleTransferTests;
 			sourceTree = "<group>";
 		};
+		6574BC141F8A58B800E10D33 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				6574BC151F8A58D300E10D33 /* StyleTransferAPI.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6574BC0E1F8A56E200E10D33 /* Build configuration list for PBXNativeTarget "DrawingStyleTransfer" */;
 			buildPhases = (
+				95E577BE46D9A0B010698EDC /* [CP] Check Pods Manifest.lock */,
 				6574BBEA1F8A56E200E10D33 /* Sources */,
 				6574BBEB1F8A56E200E10D33 /* Frameworks */,
 				6574BBEC1F8A56E200E10D33 /* Resources */,
+				7917CC1AE1FDC5DB4FE3F69D /* [CP] Embed Pods Frameworks */,
+				136E27B6D575E9815090F5A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,12 +236,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		136E27B6D575E9815090F5A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawingStyleTransfer/Pods-DrawingStyleTransfer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7917CC1AE1FDC5DB4FE3F69D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DrawingStyleTransfer/Pods-DrawingStyleTransfer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawingStyleTransfer/Pods-DrawingStyleTransfer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95E577BE46D9A0B010698EDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawingStyleTransfer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6574BBEA1F8A56E200E10D33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6574BBF41F8A56E200E10D33 /* ViewController.swift in Sources */,
+				6574BC161F8A58D300E10D33 /* StyleTransferAPI.swift in Sources */,
 				6574BBFA1F8A56E200E10D33 /* DrawingStyleTransfer.xcdatamodeld in Sources */,
 				6574BBF21F8A56E200E10D33 /* AppDelegate.swift in Sources */,
 			);
@@ -213,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6574BC0A1F8A56E200E10D33 /* DrawingStyleTransferTests.swift in Sources */,
+				6574BC171F8A58D300E10D33 /* StyleTransferAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +450,7 @@
 		};
 		6574BC0F1F8A56E200E10D33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA0B0FA456DA575610DA13E /* Pods-DrawingStyleTransfer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,6 +466,7 @@
 		};
 		6574BC101F8A56E200E10D33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753E0ACF3E45790F163E12BD /* Pods-DrawingStyleTransfer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
