@@ -1,0 +1,42 @@
+For me:
+  Learn how to plan and develop apps on my own
+  Inspiration for other apps and to learn even more
+  Portfolio
+  Learn more about the style transfer neural net
+  Interesting hobby, more useful than other stuff that I do
+  Earn some money??? Secondary for sure
+
+For users:
+  Be able to make some "nice" art with no artistic ability by drawing. (think stick figures)
+  App must be useable by kids and whomever else
+  Finished artworks should be easy to share and store.
+  Show adds at some point if it gets more than 1000 downloads?
+  Can choose which style they want on their drawings
+
+Specs:
+  iOS only in first iteration
+  Do processing on a backend somewhere
+  No login or other complicating stuff
+  Should be dead simple to use
+  Start with only 5 styles
+
+Future ideas:
+  Consider adding photographies from camera or gallery in future. A kid can draw on paper, and then transfer the style using the app
+
+Use cases:
+  Start app
+    - Start by seeing an example, find styles and examples that work well.
+  Understand how to use the app easily
+  Draw an image on the screen
+    - As simple as possible, but must be possible to clear the window
+  Render the drawing into fine art with a specific style
+    -
+  Chose a specific style
+    - Tab bar or something on the bottom?
+  Share or save the finished product
+    - Regular iOS sharing impl
+  See some kind of loading while waiting for rendering
+    - Spinner with failure case
+
+  Future:
+  See add or pay for premium content

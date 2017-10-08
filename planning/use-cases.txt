@@ -1,0 +1,67 @@
+
+Using the coordinator + MVVM "Pattern"
+
+Start app:
+  Init: Go to starting screen
+
+Draw image on the screen:
+
+ViewModel
+  In: example image?
+  State: Image that is being drawn. Be able to reload the last that was here.
+  Out:
+    In memory image reference to what has been drawn
+
+Viewcontroller:
+  Control:
+    User drawing on screen in various forms. Start with simple lines
+    Clear image
+    Done signal
+  View
+    See the image that is being drawn
+    Some way of ending drawing
+    Some way of clearning the drawing
+
+
+
+Select style to render:
+  Init: All possible styles. For now hard code?
+  State: Which ever style was selected last. Handle this internally
+  Outout: reference to one of the styles
+
+  Control:
+    Be able to select one of the styles that are available
+  Views:
+    List with examples of  the styles that can be rendered
+
+Render the image:
+  In:
+    Style to be rendered
+    Image to be rendered
+
+  Out:
+    Finished image
+
+  Control:
+    Share this image signal
+    Go back / done / edit
+  View:
+    Rendered image
+    Render in progress loading icon
+
+
+
+Use cases:
+  Start app
+    - Start by seeing an example, find styles and examples that work well.
+  Understand how to use the app easily
+  Draw an image on the screen
+    - As simple as possible, but must be possible to clear the window
+  Render the drawing into fine art with a specific style
+    -
+  Chose a specific style
+    - Tab bar or something on the bottom?
+  Share or save the finished product
+    - Regular iOS sharing impl
+  See some kind of loading while waiting for rendering
+    - Spinner with failure case
