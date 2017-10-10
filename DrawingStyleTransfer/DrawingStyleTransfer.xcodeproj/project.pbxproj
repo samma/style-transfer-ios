@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6541E4D21F8D4D3900080BE9 /* mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = 6541E4D11F8D4AB200080BE9 /* mountain.png */; };
 		6574BBF21F8A56E200E10D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574BBF11F8A56E200E10D33 /* AppDelegate.swift */; };
 		6574BBF41F8A56E200E10D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6574BBF31F8A56E200E10D33 /* ViewController.swift */; };
 		6574BBF71F8A56E200E10D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6574BBF51F8A56E200E10D33 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		4DEDD337763E35F83B7043EE /* Pods_DrawingStyleTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawingStyleTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		581763A24BB467EB0AF14D16 /* Pods_DrawingStyleTransferTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawingStyleTransferTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6541E4D11F8D4AB200080BE9 /* mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountain.png; sourceTree = "<group>"; };
 		6574BBEE1F8A56E200E10D33 /* DrawingStyleTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingStyleTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6574BBF11F8A56E200E10D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6574BBF31F8A56E200E10D33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		6574BC081F8A56E200E10D33 /* DrawingStyleTransferTests */ = {
 			isa = PBXGroup;
 			children = (
+				6541E4D11F8D4AB200080BE9 /* mountain.png */,
 				6574BC1B1F8A6EB600E10D33 /* StyleTransferAPIDeepArtImplTest.swift */,
 				6574BC0B1F8A56E200E10D33 /* Info.plist */,
 			);
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6541E4D21F8D4D3900080BE9 /* mountain.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
