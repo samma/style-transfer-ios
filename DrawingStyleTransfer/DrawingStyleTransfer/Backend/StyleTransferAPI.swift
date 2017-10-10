@@ -10,8 +10,9 @@ import Foundation
 import UIKit
 
 struct Style {
-    let index:Int
+    let index:String
     let image:UIImage
+    let name:String
 }
 
 protocol StyleTransferAPIProtocol {
@@ -23,7 +24,7 @@ extension StyleTransferAPIProtocol {
     func getStyles(completion: @escaping (Error?, [Style]) -> Void) {
         //DO asyn task
 
-        let style = Style(index: 1, image: UIImage())
+        let style = Style(index: "", image: UIImage(), name: "")
         var styles:[Style] = []
         styles.append(style)
         completion(nil, styles)

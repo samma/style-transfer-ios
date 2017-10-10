@@ -4,8 +4,10 @@ use_frameworks!
 
 target 'DrawingStyleTransfer' do
     pod 'Alamofire', '~> 4.5'
+    pod 'AlamofireImage', '~> 3.3'
 end
 
 target 'DrawingStyleTransferTests' do
     pod 'Alamofire', '~> 4.5'
+    pod 'AlamofireImage', '~> 3.3'
 end
