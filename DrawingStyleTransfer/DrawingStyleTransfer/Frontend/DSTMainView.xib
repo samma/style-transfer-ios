@@ -15,6 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSTMainVC" customModule="DrawingStyleTransfer" customModuleProvider="target">
             <connections>
+                <outlet property="activity" destination="Tx9-Tw-8bc" id="UOe-Cx-dCd"/>
                 <outlet property="placeHolder" destination="oOc-KP-Gnp" id="6nr-Yc-lja"/>
                 <outlet property="resultImage" destination="Xir-Yc-tqg" id="9Vw-Sc-wyk"/>
                 <outlet property="styleImage" destination="7dN-ob-m7h" id="Nay-WD-JpC"/>
@@ -41,9 +42,17 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7dN-ob-m7h">
                             <rect key="frame" x="0.0" y="0.0" width="187.5" height="109"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="o47-IW-3me" appends="YES" id="Wfl-HS-q0d"/>
+                            </connections>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xir-Yc-tqg">
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xir-Yc-tqg">
                             <rect key="frame" x="187.5" y="0.0" width="187.5" height="94"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="alz-EL-tCc" appends="YES" id="RXR-aV-tTR"/>
+                            </connections>
                         </imageView>
                     </subviews>
                 </stackView>
@@ -54,6 +63,10 @@
                         <action selector="testButtonTapped:" destination="-1" eventType="touchUpInside" id="brk-CK-bhq"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Tx9-Tw-8bc">
+                    <rect key="frame" x="86" y="20" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -80,5 +93,15 @@
             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
         </imageView>
+        <tapGestureRecognizer id="alz-EL-tCc">
+            <connections>
+                <action selector="imageTapped:" destination="-1" id="ndq-BE-IRp"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="o47-IW-3me">
+            <connections>
+                <action selector="imageTapped:" destination="-1" id="5VX-8x-2TO"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>

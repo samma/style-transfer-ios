@@ -21,6 +21,31 @@ class StyleTransferAPIDeepArtImpl : StyleTransferAPIProtocol {
     let styleEndPoint = URL(string: "https://turbo.deepart.io/styles/")
     let uploadEndPoint = URL(string: "https://turbo.deepart.io/api/post/")
     let downloadEndPoint = "https://turbo.deepart.io/media/output/"
+    
+    func pollThenDownloadImage (url: URL, completion : @escaping ((_ image: UIImage) -> Void)) {
+        
+        var canceled = false;
+        
+        for secondsToWait in 1...15 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(secondsToWait), execute: {
+                if !canceled {
+                    Alamofire.request(url).responseImage { response in
+                        print(response)
+                        if let image = response.result.value {
+                            print("Got the image!")
+                            canceled = true
+                            completion(image)
+                        }
+                        else {
+                            print("Failed to get image")
+                        }
+                    }
+                }
+            })
+        }
+        
+
+    }
 
     func convertImageWithStyle(image: UIImage, style: Style, completion: @escaping (Error?, URL?) -> Void) {
         
