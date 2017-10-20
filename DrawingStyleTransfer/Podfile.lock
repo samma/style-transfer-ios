@@ -2,15 +2,21 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
+  - jot (0.1.5):
+    - Masonry (~> 0.6.1)
+  - Masonry (0.6.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - AlamofireImage (~> 3.3)
+  - jot
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  jot: 0f5dc333defa6ad805d01adc3834b201c22510a7
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
 
-PODFILE CHECKSUM: eebc0ef78dd96d455000a68236509af5537dd2fd
+PODFILE CHECKSUM: c1355d80ccc975ad131f1ab121e4c9f345419a08
 
 COCOAPODS: 1.3.1
